@@ -7,7 +7,7 @@ from config import BOT_TOKEN
 from handlers import setup_handlers
 
 
-bot = Bot(token=BOT_TOKEN)
+bot = Bot(token=BOT_TOKEN, parse_mode='HTML')
 dp = Dispatcher(bot=bot)
 logging.basicConfig(level='INFO')
 
